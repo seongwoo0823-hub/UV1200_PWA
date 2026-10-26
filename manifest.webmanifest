@@ -1,0 +1,82 @@
+{
+  "id": "uv1200-web-control",
+  "name": "UV1200 웹 컨트롤",
+  "short_name": "UV1200",
+  "description": "UV1200 분광광도계(M.Wave Professional) 웹 버전: 정량분석, 동역학, 스펙트럼, DNA/단백질, 광합성(DCPIP) 실험",
+  "lang": "ko",
+  "dir": "ltr",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#e9edf5",
+  "theme_color": "#e9edf5",
+  "categories": [
+    "education",
+    "utilities",
+    "productivity"
+  ],
+  "icons": [
+    {
+      "src": "icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icons/icon-maskable-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "icons/icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "정량분석",
+      "url": "./?tab=quant"
+    },
+    {
+      "name": "스펙트럼 스캔",
+      "url": "./?tab=spec"
+    },
+    {
+      "name": "광합성 (DCPIP)",
+      "url": "./?tab=photo"
+    },
+    {
+      "name": "기기·점검",
+      "url": "./?tab=device"
+    }
+  ],
+  "file_handlers": [
+    {
+      "action": "./",
+      "accept": {
+        "application/json": [
+          ".json"
+        ],
+        "text/plain": [
+          ".wls",
+          ".kin",
+          ".ens",
+          ".qua"
+        ]
+      }
+    }
+  ],
+  "launch_handler": {
+    "client_mode": "focus-existing"
+  }
+}
